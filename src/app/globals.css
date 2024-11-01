@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.project-grid{
+    display: grid;
+    grid-template-columns: auto auto auto
+}
+
+.project h3{
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 80%;
+    margin: auto;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.4rem;
+    text-align: center;
+    transition: all 3s ease-in-out;
+}
+
+.project:hover h3{
+    opacity: 1;
+}
+
+.swiper-wrapper{
+    overflow: auto;
+}
+
+.swiper-slide{
+    display: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .swiper-slide{
+        min-width: 85vw;
+        margin: auto;
+    }
+}
